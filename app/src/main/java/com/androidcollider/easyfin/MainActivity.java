@@ -89,14 +89,11 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             String tabName = "";
-            if (position == 0)
-                tabName = "Головна";
-            if (position == 1)
-                tabName = "Рахунки";
-            if (position == 2)
-                tabName = "Транзакції";
-            if (position == 3)
-                tabName = "Курси";
+            switch (position) {
+            case 0: {tabName = "Головна"; break;}
+            case 1: {tabName = "Рахунки"; break;}
+            case 2: {tabName = "Транзакції"; break;}
+            case 3: {tabName = "Курси"; break;}}
 
             return tabName;
         }
