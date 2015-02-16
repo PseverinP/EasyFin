@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
         pager.setOffscreenPageLimit(4);
 
         tabs.setTextSize(30);
-        tabs.setTextColorResource(R.color.navy);
+        //tabs.setTextColorResource(R.color.navy);
         tabs.bringToFront();
 
 
@@ -73,7 +73,12 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return PageFragment.newInstance(position);
+            switch (position) {
+                case 0: return FragmentMain.newInstance(position);
+                case 1: return FragmentExpense.newInstance(position);
+                case 2: return FragmentTransaction.newInstance(position);
+
+                default: return PageFragment.newInstance(position);}
         }
 
         @Override
@@ -89,11 +94,14 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             String tabName = "";
-            switch (position) {
-            case 0: {tabName = "Головна"; break;}
-            case 1: {tabName = "Рахунки"; break;}
-            case 2: {tabName = "Транзакції"; break;}
-            case 3: {tabName = "Курси"; break;}}
+            if (position == 0)
+                tabName = "Головна";
+            if (position == 1)
+                tabName = "Рахунки";
+            if (position == 2)
+                tabName = "Транзакції";
+            if (position == 3)
+                tabName = "Курси";
 
             return tabName;
         }

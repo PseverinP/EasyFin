@@ -5,9 +5,7 @@ import android.content.SharedPreferences;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-/**
- * Created by pseverin on 22.12.14.
- */
+
 public class DataSource {
     private final static String TAG = "Андроідний Коллайдер";
     private final static String APP_PREFERENCES = "EasyfinPref";

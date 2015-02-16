@@ -1,8 +1,6 @@
 package com.androidcollider.easyfin.database;
 
-/**
- * Created by pseverin on 22.12.14.
- */
+
 public class SqlQueries {
     //make a string SQL request for Account table
     public static final String create_account_table = "CREATE TABLE Account (" +

@@ -5,6 +5,19 @@
     <string name="action_settings">Settings</string>
     <string name="menu_exit">Вихід</string>
 
-    <string name="current_balance">Поточний баланс</string>
+    <string name="main_current_balance">Поточний баланс</string>
+    <string name="main_cash">Готівка</string>
+    <string name="main_card">Картки</string>
+    <string name="main_deposit">Картки</string>
+    <string name="main_debt">Борги</string>
+    <string name="main_sum">Загалом</string>
+    <string name="main_statistic">Статистика</string>
+    <string name="main_period">Період</string>
+    <string name="main_income">Дохід</string>
+    <string name="main_cost">Витрати</string>
+    <string name="btn_expense_add">Додати рахунок</string>
+    <string name="btn_transaction_add">Додати транзакцію</string>
+
+    <string name="value_textview">10000</string>
 
 </resources>
